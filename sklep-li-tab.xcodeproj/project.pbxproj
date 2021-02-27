@@ -9,10 +9,11 @@
 /* Begin PBXBuildFile section */
 		0C0CC28425EAB6EA00B494F5 /* sklep_li_tabApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0CC28325EAB6EA00B494F5 /* sklep_li_tabApp.swift */; };
 		0C0CC28625EAB6EA00B494F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0CC28525EAB6EA00B494F5 /* ContentView.swift */; };
-		0C0CC28825EAB6EC00B494F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C0CC28725EAB6EC00B494F5 /* Assets.xcassets */; };
-		0C0CC28B25EAB6EC00B494F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C0CC28A25EAB6EC00B494F5 /* Preview Assets.xcassets */; };
 		0C0CC29425EAB88600B494F5 /* KoszykView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0CC29325EAB88600B494F5 /* KoszykView.swift */; };
 		0C0CC29725EAB89B00B494F5 /* KategorieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0CC29625EAB89B00B494F5 /* KategorieView.swift */; };
+		0C0CC2A225EAC1FE00B494F5 /* ProduktyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0CC2A125EAC1FE00B494F5 /* ProduktyView.swift */; };
+		0C0CC2B625EACE4B00B494F5 /* Sklep.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C0CC2B525EACE4B00B494F5 /* Sklep.png */; };
+		0CC2236025EAE86600AE3870 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C0CC28725EAB6EC00B494F5 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		0C0CC28C25EAB6EC00B494F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C0CC29325EAB88600B494F5 /* KoszykView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoszykView.swift; sourceTree = "<group>"; };
 		0C0CC29625EAB89B00B494F5 /* KategorieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KategorieView.swift; sourceTree = "<group>"; };
+		0C0CC2A125EAC1FE00B494F5 /* ProduktyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProduktyView.swift; sourceTree = "<group>"; };
+		0C0CC2B525EACE4B00B494F5 /* Sklep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sklep.png; path = ../../../../Downloads/Sklep.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 		0C0CC28225EAB6EA00B494F5 /* sklep-li-tab */ = {
 			isa = PBXGroup;
 			children = (
+				0C0CC2B125EACAFD00B494F5 /* Grafika */,
 				0C0CC28325EAB6EA00B494F5 /* sklep_li_tabApp.swift */,
 				0C0CC28525EAB6EA00B494F5 /* ContentView.swift */,
 				0C0CC28725EAB6EC00B494F5 /* Assets.xcassets */,
@@ -63,6 +67,7 @@
 				0C0CC28925EAB6EC00B494F5 /* Preview Content */,
 				0C0CC29325EAB88600B494F5 /* KoszykView.swift */,
 				0C0CC29625EAB89B00B494F5 /* KategorieView.swift */,
+				0C0CC2A125EAC1FE00B494F5 /* ProduktyView.swift */,
 			);
 			path = "sklep-li-tab";
 			sourceTree = "<group>";
@@ -73,6 +78,14 @@
 				0C0CC28A25EAB6EC00B494F5 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0C0CC2B125EACAFD00B494F5 /* Grafika */ = {
+			isa = PBXGroup;
+			children = (
+				0C0CC2B525EACE4B00B494F5 /* Sklep.png */,
+			);
+			path = Grafika;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -132,8 +145,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C0CC28B25EAB6EC00B494F5 /* Preview Assets.xcassets in Resources */,
-				0C0CC28825EAB6EC00B494F5 /* Assets.xcassets in Resources */,
+				0CC2236025EAE86600AE3870 /* Assets.xcassets in Resources */,
+				0C0CC2B625EACE4B00B494F5 /* Sklep.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -144,6 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C0CC2A225EAC1FE00B494F5 /* ProduktyView.swift in Sources */,
 				0C0CC29725EAB89B00B494F5 /* KategorieView.swift in Sources */,
 				0C0CC28625EAB6EA00B494F5 /* ContentView.swift in Sources */,
 				0C0CC29425EAB88600B494F5 /* KoszykView.swift in Sources */,
@@ -205,7 +219,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -260,7 +274,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

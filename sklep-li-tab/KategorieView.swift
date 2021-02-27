@@ -9,7 +9,13 @@ import SwiftUI
 
 struct KategorieView: View {
     var body: some View {
-        Text("Kategorie")
+        NavigationView{
+            List{
+                Text("Owoce")
+                Text("Warzywa")
+                Text("Nabiał")
+            }
+        }
     }
 }
 
