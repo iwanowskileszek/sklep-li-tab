@@ -11,6 +11,8 @@
 		0C0CC28625EAB6EA00B494F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0CC28525EAB6EA00B494F5 /* ContentView.swift */; };
 		0C0CC28825EAB6EC00B494F5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C0CC28725EAB6EC00B494F5 /* Assets.xcassets */; };
 		0C0CC28B25EAB6EC00B494F5 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C0CC28A25EAB6EC00B494F5 /* Preview Assets.xcassets */; };
+		0C0CC29425EAB88600B494F5 /* KoszykView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0CC29325EAB88600B494F5 /* KoszykView.swift */; };
+		0C0CC29725EAB89B00B494F5 /* KategorieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0CC29625EAB89B00B494F5 /* KategorieView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		0C0CC28725EAB6EC00B494F5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0C0CC28A25EAB6EC00B494F5 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0C0CC28C25EAB6EC00B494F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0C0CC29325EAB88600B494F5 /* KoszykView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoszykView.swift; sourceTree = "<group>"; };
+		0C0CC29625EAB89B00B494F5 /* KategorieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KategorieView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +61,8 @@
 				0C0CC28725EAB6EC00B494F5 /* Assets.xcassets */,
 				0C0CC28C25EAB6EC00B494F5 /* Info.plist */,
 				0C0CC28925EAB6EC00B494F5 /* Preview Content */,
+				0C0CC29325EAB88600B494F5 /* KoszykView.swift */,
+				0C0CC29625EAB89B00B494F5 /* KategorieView.swift */,
 			);
 			path = "sklep-li-tab";
 			sourceTree = "<group>";
@@ -138,7 +144,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0C0CC29725EAB89B00B494F5 /* KategorieView.swift in Sources */,
 				0C0CC28625EAB6EA00B494F5 /* ContentView.swift in Sources */,
+				0C0CC29425EAB88600B494F5 /* KoszykView.swift in Sources */,
 				0C0CC28425EAB6EA00B494F5 /* sklep_li_tabApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
