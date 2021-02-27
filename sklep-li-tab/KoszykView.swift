@@ -9,6 +9,9 @@ import SwiftUI
 
 struct KoszykView: View {
     var body: some View {
+        NavigationView {
+            
+        }
         Text("Koszyk")
     }
 }

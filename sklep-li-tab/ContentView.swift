@@ -8,9 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State var tabSelection = 0
+    
     var body: some View {
-        Text("Hello, world!")
-            .padding()
+        TabView(selection: $tabSelection) {
+            KategorieView().tabItem {
+                Image(systemName:"list.dash")
+                Text("Kategorie")
+            }.tag(0)
+            KoszykView().tabItem {
+                Image(systemName:"arrow.up.bin.fill")
+                Text("Koszyk")
+            }.tag(1)
+        }
     }
 }
 
