@@ -119,27 +119,24 @@ struct ProduktyView: View {
     @State var owoce: [Produkt] = [ Produkt(name: "Jabłka"),Produkt(name: "Pomarańcze"), Produkt(name: "Banany")]
     @State var warzywa: [Produkt] = [ Produkt(name: "Marchew"), Produkt(name: "Pietruszka"), Produkt(name: "Sałata"), Produkt(name: "Kalafior")]
 
-      var body: some View {
+    var body: some View {
         VStack {
             if string == "Owoce"{
-                NavigationView {
-                    List(owoce) {
-                        produkt in ProduktRow(produkt: produkt)
-                        NavigationLink(destination:
-                            ProduktView(string: produkt.name)) {
-                            
+                List(owoce) {
+                    produkt in ProduktRow(produkt: produkt)
+                    NavigationLink(destination:
+                        ProduktView(produkt: produkt)) {
+                        
                         }
                     }
-                }
             } else {
-                NavigationView {
-                    List(warzywa) {
-                        produkt in ProduktRow(produkt: produkt)
-                        NavigationLink(destination:
-                            ProduktView(string: produkt.name)) {
+                List(warzywa) {
+                    produkt in ProduktRow(produkt: produkt)
+                    NavigationLink(destination:
+                        //ProduktView(string: produkt.name)) {
+                        ProduktView(produkt: produkt)) {
                             
                         }
-                    }
                 }
             }
         }
@@ -150,18 +147,25 @@ struct ProduktyView: View {
 struct ProduktView: View {
     @State private var wybranaIlosc = "0"
     let ilosc = ["0","1","2","3","4","5","6","7","8","9"]
-    var string: String
+    var produkt: Produkt
     
     var body: some View {
-        VStack {
+        Text(" ")
+        HStack{
+            Text(produkt.name)
             Picker("Ilość", selection: $wybranaIlosc) {
                 ForEach(ilosc, id: \.self) {
                     Text($0)
                 }
             }
-            Text("wybrałeś: \(wybranaIlosc)")
-            //UIButton()
         }
-        .navigationTitle(string)
+        Text("wybrałeś: \(wybranaIlosc)")
+        let produkt2: Produkt = Produkt(name: produkt.name, iloscWKoszyku: Int(wybranaIlosc)!)
+        
+        NavigationLink(destination: KoszykView()) {
+            KoszykView().addProdukt(produkt: produkt2)
+            Text("Dodaj do koszyka")
+        }
     }
 }
+

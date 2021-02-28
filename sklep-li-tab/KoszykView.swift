@@ -8,9 +8,9 @@
 import SwiftUI
 
 struct KoszykView: View {
-    
 
-    @State var koszyk: [Produkt] = [
+
+    @State public var koszyk: [Produkt] = [
         Produkt(name: "Kalafior", iloscWKoszyku: 5)
     ]
 
@@ -25,7 +25,16 @@ struct KoszykView: View {
             }
         }
     }
+
+//    func addProdukt(produkt: Produkt) {
+//        koszyk.append(produkt)
+//    }
+    
+    func addProdukt(produkt: Produkt) {
+        KoszykView().koszyk.append(produkt)
+    }
 }
+
 
 
 struct KoszykView_Previews: PreviewProvider {
