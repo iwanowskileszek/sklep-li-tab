@@ -121,10 +121,26 @@ struct ProduktyView: View {
 
       var body: some View {
         VStack {
-            if string == "owoce"{
-                List(owoce) { produkt in ProduktRow(produkt: produkt)}
+            if string == "Owoce"{
+                NavigationView {
+                    List(owoce) {
+                        produkt in ProduktRow(produkt: produkt)
+                        NavigationLink(destination:
+                            ProduktView(string: produkt.name)) {
+                            
+                        }
+                    }
+                }
             } else {
-                List(warzywa) { produkt in ProduktRow(produkt: produkt)}
+                NavigationView {
+                    List(warzywa) {
+                        produkt in ProduktRow(produkt: produkt)
+                        NavigationLink(destination:
+                            ProduktView(string: produkt.name)) {
+                            
+                        }
+                    }
+                }
             }
         }
         .navigationTitle(string)
@@ -132,12 +148,19 @@ struct ProduktyView: View {
 }
 
 struct ProduktView: View {
-    
+    @State private var wybranaIlosc = "0"
+    let ilosc = ["0","1","2","3","4","5","6","7","8","9"]
     var string: String
     
     var body: some View {
         VStack {
-            
+            Picker("Ilość", selection: $wybranaIlosc) {
+                ForEach(ilosc, id: \.self) {
+                    Text($0)
+                }
+            }
+            Text("wybrałeś: \(wybranaIlosc)")
+            //UIButton()
         }
         .navigationTitle(string)
     }
