@@ -11,7 +11,6 @@
 		0C0CC28625EAB6EA00B494F5 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0CC28525EAB6EA00B494F5 /* ContentView.swift */; };
 		0C0CC29425EAB88600B494F5 /* KoszykView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0CC29325EAB88600B494F5 /* KoszykView.swift */; };
 		0C0CC29725EAB89B00B494F5 /* KategorieView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0CC29625EAB89B00B494F5 /* KategorieView.swift */; };
-		0C0CC2A225EAC1FE00B494F5 /* ProduktyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C0CC2A125EAC1FE00B494F5 /* ProduktyView.swift */; };
 		0C0CC2B625EACE4B00B494F5 /* Sklep.png in Resources */ = {isa = PBXBuildFile; fileRef = 0C0CC2B525EACE4B00B494F5 /* Sklep.png */; };
 		0CC2236025EAE86600AE3870 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0C0CC28725EAB6EC00B494F5 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
@@ -25,7 +24,6 @@
 		0C0CC28C25EAB6EC00B494F5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0C0CC29325EAB88600B494F5 /* KoszykView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KoszykView.swift; sourceTree = "<group>"; };
 		0C0CC29625EAB89B00B494F5 /* KategorieView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KategorieView.swift; sourceTree = "<group>"; };
-		0C0CC2A125EAC1FE00B494F5 /* ProduktyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProduktyView.swift; sourceTree = "<group>"; };
 		0C0CC2B525EACE4B00B494F5 /* Sklep.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Sklep.png; path = ../../../../Downloads/Sklep.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -67,7 +65,6 @@
 				0C0CC28925EAB6EC00B494F5 /* Preview Content */,
 				0C0CC29325EAB88600B494F5 /* KoszykView.swift */,
 				0C0CC29625EAB89B00B494F5 /* KategorieView.swift */,
-				0C0CC2A125EAC1FE00B494F5 /* ProduktyView.swift */,
 			);
 			path = "sklep-li-tab";
 			sourceTree = "<group>";
@@ -157,7 +154,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0C0CC2A225EAC1FE00B494F5 /* ProduktyView.swift in Sources */,
 				0C0CC29725EAB89B00B494F5 /* KategorieView.swift in Sources */,
 				0C0CC28625EAB6EA00B494F5 /* ContentView.swift in Sources */,
 				0C0CC29425EAB88600B494F5 /* KoszykView.swift in Sources */,

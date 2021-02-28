@@ -9,9 +9,7 @@ import SwiftUI
 
 struct KoszykView: View {
     
-//    @State var koszyk = [
-//        "Kalafior"
-//    ]
+
     @State var koszyk: [Produkt] = [
         Produkt(name: "Kalafior", iloscWKoszyku: 5)
     ]
@@ -37,7 +35,7 @@ struct KoszykView_Previews: PreviewProvider {
 }
 
 struct KoszykRow: View {
-    var produkt: Produkt
+     var produkt: Produkt
 
     var body: some View {
         HStack {
