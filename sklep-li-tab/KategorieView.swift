@@ -9,7 +9,6 @@ import SwiftUI
 
 struct KategorieView: View {
     
-
     var stringArray = [
         "Owoce",
         "Warzywa"
@@ -20,11 +19,6 @@ struct KategorieView: View {
         Kategoria(name: "Warzywa")
     ]
     
-    
-    
-    
-    
-    
     var body: some View {
         NavigationView {
             VStack{
@@ -32,7 +26,6 @@ struct KategorieView: View {
                     KategoriaRow(kategoria: kategoria)
                     NavigationLink(destination:
                         ProduktyView(string: kategoria.name)) {
-                        
                     }
                 }
                 // List(stringArray, id: \.self){ string in CustomRow(string: string, produkt: Produkt(name: string, iloscWKoszyku: 4))}
@@ -76,7 +69,6 @@ struct CustomRow: View {
 
 
 struct KategoriaRow: View {
-    //var string: String
     var kategoria: Kategoria
 
     var body: some View {
@@ -86,12 +78,10 @@ struct KategoriaRow: View {
     }
 }
 struct ProduktRow: View {
-    //var string: String
     var produkt: Produkt
     
     var body: some View {
         HStack {
-            //Text(string)
             VStack {
                 Text(String(produkt.name))
             }
@@ -126,32 +116,20 @@ struct AddRow: View {
 struct ProduktyView: View {
    
     var string: String
-    @State var owoce: [Produkt] = [
-        Produkt(name: "Jabłka"),Produkt(name: "Pomarańcze"), Produkt(name: "Banany")
-    ]
-
-    @State var warzywa: [Produkt] = [
-        Produkt(name: "Marchew"), Produkt(name: "Pietruszka"), Produkt(name: "Sałata"), Produkt(name: "Kalafior")
-    ]
+    @State var owoce: [Produkt] = [ Produkt(name: "Jabłka"),Produkt(name: "Pomarańcze"), Produkt(name: "Banany")]
+    @State var warzywa: [Produkt] = [ Produkt(name: "Marchew"), Produkt(name: "Pietruszka"), Produkt(name: "Sałata"), Produkt(name: "Kalafior")]
 
       var body: some View {
         VStack {
             if string == "owoce"{
-                List(owoce) { produkt in
-                    ProduktRow(produkt: produkt)
-                }
+                List(owoce) { produkt in ProduktRow(produkt: produkt)}
             } else {
-                List(warzywa) { produkt in
-                    ProduktRow(produkt: produkt)
-                }
+                List(warzywa) { produkt in ProduktRow(produkt: produkt)}
             }
-            
         }
         .navigationTitle(string)
     }
 }
-
-
 
 struct ProduktView: View {
     
@@ -159,7 +137,6 @@ struct ProduktView: View {
     
     var body: some View {
         VStack {
-            
             
         }
         .navigationTitle(string)
