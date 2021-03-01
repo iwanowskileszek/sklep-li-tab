@@ -9,29 +9,13 @@ import SwiftUI
 
 struct KoszykView: View {
 
-
-    @State public var koszyk: [Produkt] = [
-        Produkt(name: "Kalafior", iloscWKoszyku: 5)
-    ]
-
-    
-    
-    
     var body: some View {
         VStack {
-            List(koszyk){ produkt in
+            List(Koszyk){ produkt in
                 KoszykRow(produkt: produkt)
                     
             }
         }
-    }
-
-//    func addProdukt(produkt: Produkt) {
-//        koszyk.append(produkt)
-//    }
-    
-    func addProdukt(produkt: Produkt) {
-        KoszykView().koszyk.append(produkt)
     }
 }
 
