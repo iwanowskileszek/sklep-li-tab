@@ -124,23 +124,26 @@ struct ProduktView: View {
         }
         Text("wybrałeś: \(wybranaIlosc)")
         let produkt2: Produkt = Produkt(name: produkt.name, iloscWKoszyku: Int(wybranaIlosc)!)
+        if Int(wybranaIlosc) != 0 {
+            NavigationLink(destination: KoszykView())
+            {
 
-        NavigationLink(destination: KoszykView())
-        {
-            Text("Dodaj do koszyka")
-        }.simultaneousGesture(TapGesture().onEnded {
-            var znaleziono = false
-            for produkt in Koszyk {
-                var i = 0
-                if produkt2.name == produkt.name {
-                    Koszyk[i].iloscWKoszyku = Koszyk[i].iloscWKoszyku + produkt2.iloscWKoszyku
-                    znaleziono = true
+                Text("\n Dodaj do koszyka -> ").bold()
+
+            }.simultaneousGesture(TapGesture().onEnded {
+                var znaleziono = false
+                for produkt in Koszyk {
+                    var i = 0
+                    if produkt2.name == produkt.name {
+                        Koszyk[i].iloscWKoszyku = Koszyk[i].iloscWKoszyku + produkt2.iloscWKoszyku
+                        znaleziono = true
+                    }
+                    i += 1
                 }
-                i += 1
-            }
-            if znaleziono == false {
-                Koszyk.append(produkt2)
-            }
-        })
+                if (znaleziono == false  && produkt2.iloscWKoszyku != 0) {
+                    Koszyk.append(produkt2)
+                }
+            })
+        }
     }
 }
