@@ -129,7 +129,18 @@ struct ProduktView: View {
         {
             Text("Dodaj do koszyka")
         }.simultaneousGesture(TapGesture().onEnded {
-            Koszyk.append(produkt2)
+            var znaleziono = false
+            for produkt in Koszyk {
+                var i = 0
+                if produkt2.name == produkt.name {
+                    Koszyk[i].iloscWKoszyku = Koszyk[i].iloscWKoszyku + produkt2.iloscWKoszyku
+                    znaleziono = true
+                }
+                i += 1
+            }
+            if znaleziono == false {
+                Koszyk.append(produkt2)
+            }
         })
     }
 }
