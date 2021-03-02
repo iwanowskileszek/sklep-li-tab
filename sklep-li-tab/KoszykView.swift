@@ -11,6 +11,7 @@ struct KoszykView: View {
 
     var body: some View {
         VStack {
+            Text("Koszyk: \n").bold().font(.largeTitle)
             List(Koszyk){ produkt in
                 KoszykRow(produkt: produkt)
                     
